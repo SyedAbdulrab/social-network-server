@@ -1,7 +1,7 @@
 const { ApolloServer } = require("apollo-server");
 const mongoose = require("mongoose"); //its an ORM(object elational mapper) that lets us interact with mongo db
 
-const { MONGODB_URL } = require("./config");
+const { MONGODB_URL } = require("./config.js");
 const typeDefs = require('./graphql/typeDefs')
 const resolvers = require('./graphql/resolvers/index')
 
