@@ -1,6 +1,7 @@
 const postsResolvers = require('./posts')
 const usersResolvers = require('./users')
 const commentsResolvers = require('./comments')
+
 module.exports = {
     Post:{
         likesCount:(parent)=>parent.likes.length,

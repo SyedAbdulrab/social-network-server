@@ -6,7 +6,7 @@ module.exports = {
   Query: {
     getPosts: async () => {
       console.log('getPosts')
-
+      return []
       try {
         const posts = await Post.find().sort({ createdAt: -1 });
         return posts;

@@ -27,8 +27,6 @@ module.exports = {
       _,
       { registerInput: { username, email, password, confirmPassword } }
     ) {
-      console.log("register");
-
       // TODO : validate user data
       const { errors, valid } = validateRegisterInput(
         username,
